@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Diary</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for typography pairing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">🥬 Foodie Diary</a>
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Recipes</a>
+                <a href="#">Add Recipe</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="serif-title">Welcome to Foodie Diary!</h1>
+        <p class="subtitle">Discover delicious vegetarian recipes created and shared by our vibrant food community.</p>
+        <button class="btn-primary">Explore Recipes</button>
+    </section>
+
+    <!-- Recipe Search & Display Section -->
+    <section class="recipes-section">
+        <h2 class="serif-title section-title">Our Vegetarian Recipes</h2>
+        <p class="section-subtitle">Browse through dozens of tasty dishes</p>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search recipes..." class="search-bar">
+        </div>
+
+        <div class="filter-tags">
+            <button class="tag active">Breakfast</button>
+            <button class="tag">Lunch</button>
+            <button class="tag">Dinner</button>
+            <button class="tag">Desserts</button>
+        </div>
+
+        <div class="no-recipes">
+            <p>No recipes found.</p>
+        </div>
+    </section>
+
+    <!-- Share Your Recipe Form -->
+    <section class="form-section">
+        <h2 class="serif-title section-title">Share Your Recipe 🍲</h2>
+        <p class="section-subtitle">Add your favorite dish to our collection</p>
+        
+        <form class="custom-form">
+            <div class="form-group">
+                <input type="text" placeholder="Recipe Title" required>
+            </div>
+            <div class="form-group">
+                <select required>
+                    <option value="" disabled selected>Dropdown</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Recipe Description" rows="2" required></textarea>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Enter Ingredients" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-btn">Add Recipe</button>
+        </form>
+    </section>
+
+    <!-- Contact Us Form -->
+    <section class="form-section contact-section">
+        <h2 class="serif-title section-title">Contact Us</h2>
+        <p class="section-subtitle">Have questions or feedback? Send us a message!</p>
+        
+        <form class="custom-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">🥬 Foodie Diary</div>
+        <p class="footer-attribution">Made with ❤️ by Pixel Master</p>
+        <p class="copyright">&copy; 2026 Foodie Diary. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
